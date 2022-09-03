@@ -48,7 +48,7 @@ public class ShortenerService {
                 .getOriginalUrl();
     }
 
-    private String shortenUrl(String originalUrl) {
+    public String shortenUrl(String originalUrl) {
         String s = String.valueOf(originalUrl.hashCode());
         logger.info("Short link:%s".formatted(s));
         return s;
